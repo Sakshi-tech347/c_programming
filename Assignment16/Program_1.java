@@ -1,43 +1,30 @@
+import java.util.Scanner;
 
-/*class Logic
-{
-    void calculateSum(int n)
-    {
-        int iTotal = 0;
-       
 
-        for(i =1; i<=n ; i++)
-        {
-            iTotal = i + iTotal;
+ class SumOfNaturalNumbers {
+
+    // Void function to calculate and display the sum
+    static void calculateSum(int n) {
+        int sum = 0;
+
+        for (int i = 1; i <= n; i++) {
+            sum += i;
         }
-        System.out.println("Sum of Total number is:"+ iTotal);
-    }
-}
 
-
-
-class Program_1
-{
-    public static void main(String a[])
-    {
-        Logic lobj = new Logic();
-        lobj.calculateSum(10);
+        System.out.println("Sum of first " + n + " natural numbers = " + sum);
     }
 
-}*/
-class Program_1 {
     public static void main(String[] args) {
-        int iTotal = 0; // initialize variable
+        Scanner sc = new Scanner(System.in);
 
-        // your logic for total (example)
-        for (int i = 1; i <= 5; i++) {
-            iTotal = iTotal + i;
+        System.out.print("Enter the value of N: ");
+        int n = sc.nextInt();
+
+        if (n <= 0) {
+            System.out.println("Invalid input! N should be positive.");
+        } else {
+            // Call the void function
+            calculateSum(n);
         }
-
-        // print result
-        System.out.println("Sum of Total number is: " + iTotal);
-        // or
-        // System.out.printf("Sum of Total number is: %d%n", iTotal);
     }
 }
-
