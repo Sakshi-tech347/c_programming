@@ -1,3 +1,4 @@
+//print all Factors
 #include<stdio.h>
 
 void DisplayFactor(int iNo)
