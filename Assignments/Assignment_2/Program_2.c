@@ -1,27 +1,30 @@
-# include<stdio.h>
+#include<stdio.h>
 
 void Display(int iNo)
 {
+    int icnt =0;
 
-    if (iNo < 10)
+    if(iNo<0)
     {
-        printf("Hello");
+        iNo= -iNo;
+    }
+    while (iNo > 0)
+    {
+        printf("*");
+        iNo--;
 
     }
-    else
-    {
-        printf("Demo");
-    }
+    
 }
 
 int main()
 {
-    int iValue =0;
+    int iValue=0;
 
-    printf("enter number:");
+    printf("Enter number :");
     scanf("%d",&iValue);
 
     Display(iValue);
-
+    
     return 0;
 }
