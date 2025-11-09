@@ -10,8 +10,6 @@ void print_numbers(int limit)
 
 }
 
-
-
 int main()
 {
     int limit =0;
