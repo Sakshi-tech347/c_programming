@@ -14,7 +14,7 @@ void Table(int iNo)
        printf("%d\n",iCnt * iNo);
     }
    
-}
+}Time comlexity :n
 
 int main()
 {
