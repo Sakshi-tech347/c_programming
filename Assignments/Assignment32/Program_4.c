@@ -6,10 +6,10 @@
            
           Diagonal Pattern with frame
 
-          * * * #         i 1,1  1,2  1,3  1,4     i=j , i<j 
-          *   # *           2,1  2,2  2,3  2,4
-          * #   *           3,1  3,2  3,3  3,4
-          # * * *           4,1  4,2  4,3  4,4        
+                   i 1,1  1,2  1,3  1,4      
+                     2,1  2,2  2,3  2,4
+                     3,1  3,2  3,3  3,4
+                     4,1  4,2  4,3  4,4        
                             
          enter the number of row:8
          enter the number of column:8
@@ -65,4 +65,5 @@ int main()
     
     return 0;
 }
+
 
