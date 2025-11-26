@@ -6,10 +6,10 @@
            
           Diagonal Pattern with frame
 
-          * * * #         ,1  1,2  1,3i 1  1,4     i=j , i<j 
-          *   # *           2,1  2,2  2,3  2,4
-          * #   *           3,1  3,2  3,3  3,4
-          # * * *           4,1  4,2  4,3  4,4        
+                    ,1  1,2  1,3i 1  1,4     i=j , i<j 
+                     2,1  2,2  2,3  2,4
+                     3,1  3,2  3,3  3,4
+                     4,1  4,2  4,3  4,4        
                             
 1 2 3 4 5
 1 2     5
@@ -32,13 +32,13 @@ void Pattern(int iRow, int iCol)
                 printf("%d\t", j);
             }
            
-            else if(j == i)                    // second column always 2
+            else if(j == i)                    
             {
                 printf("%d\t",i);
             }
             
             
-            else                                // empty space
+            else                                
             {
                 printf("\t");
             }
@@ -62,4 +62,5 @@ int main()
     
     return 0;
 }
+
 
