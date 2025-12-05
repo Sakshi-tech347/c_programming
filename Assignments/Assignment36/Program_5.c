@@ -1,0 +1,68 @@
+///////////////////////////////////////////////////////////////////
+//    
+//    Required header file
+//
+///////////////////////////////////////////////////////////////////
+
+#include <stdio.h>       
+#include <stdbool.h>     
+
+///////////////////////////////////////////////////////////////////
+//
+//    Function Name : CountSpaces
+//    Desciption :    It use to dispay number of Whitespace
+//    Input :         string
+//    Output :        int
+//    Auther :        Sakshi  Laxman Kachate
+//    Date :          05/12/2025
+//
+/////////////////////////////////////////////////////////////////////
+ 
+int CountWhite(char Str[])
+{
+  int iCount = 0;
+  while(*Str != 0)
+  {
+    if ((*Str == " "))
+    {
+      iCount++;
+    }
+    Str++;
+  }
+  
+}
+  
+
+///////////////////////////////////////////////////////////////////
+//    
+//    Entry point Function for the application 
+//
+///////////////////////////////////////////////////////////////////
+ int main()
+ {
+  char Arr[50]={'\0'};
+  int iRet =0;
+
+  printf("enter your string :\n");
+  scanf("%[^'\n']s",&Arr);
+
+  iRet = CountWhite(Arr);
+  printf("number of Digit is %d",iRet);
+
+  return 0;
+ }
+
+///////////////////////////////////////////////////////////////////
+//  
+//  Testcases Succesfully handled by Application
+//    
+//  Input1 : "MarvellouS 1 2 3"       Output :number of White Spaces 3
+//   
+//
+///////////////////////////////////////////////////////////////////
+
+
+
+
+ 
+ 
