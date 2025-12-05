@@ -1,0 +1,66 @@
+///////////////////////////////////////////////////////////////////
+//    
+//    Required header file
+//
+///////////////////////////////////////////////////////////////////
+
+#include <stdio.h>       
+#include <stdbool.h>     
+
+///////////////////////////////////////////////////////////////////
+//
+//    Function Name : DisplayDigit
+//    Desciption :    It use to dispay number of Digit in String 
+//    Input :         string
+//    Output :        int
+//    Auther :        Sakshi  Laxman Kachate
+//    Date :          05/12/2025
+//
+/////////////////////////////////////////////////////////////////////
+ 
+void DisplayDigit(char Str[])
+{
+  int iCount = 0;
+  while(*Str != 0)
+  {
+    if ((*Str >= 0) && (*Str <= 9))
+    {
+      iCount++;
+    }
+    Str++;
+  }
+  printf("number of Digit is %d",iCount);
+}
+  
+
+///////////////////////////////////////////////////////////////////
+//    
+//    Entry point Function for the application 
+//
+///////////////////////////////////////////////////////////////////
+ int main()
+ {
+  char Arr[50]={'\0'};
+
+  printf("enter your string :\n");
+  scanf("%[^'\n']s",&Arr);
+
+  DisplayDigit(Arr);
+
+  return 0;
+ }
+
+///////////////////////////////////////////////////////////////////
+//  
+//  Testcases Succesfully handled by Application
+//    
+//  Input1 : "MarvellouS123 "       Output :number of Digit is 3
+//   
+//
+///////////////////////////////////////////////////////////////////
+
+
+
+
+ 
+ 
