@@ -1,0 +1,64 @@
+///////////////////////////////////////////////////////////////////
+//    
+//    Required header file
+//
+///////////////////////////////////////////////////////////////////
+
+#include <stdio.h>       
+#include <stdbool.h>     
+
+///////////////////////////////////////////////////////////////////
+//
+//    Function Name : StrLwrx
+//    Desciption :    It use  for convert string
+//    Input :         string
+//    Output :        string
+//    Auther :        Sakshi  Laxman Kachate
+//    Date :          05/12/2025
+//
+/////////////////////////////////////////////////////////////////////
+void StrLwrx(char str[]) 
+{
+      while(*str != 0)
+      {
+        if(*str >= 'A' && *str <='Z')
+        {
+            *str = *str +32;
+        }
+        str++;
+      } 
+}
+
+
+///////////////////////////////////////////////////////////////////
+//    
+//    Entry point Function for the application 
+//
+///////////////////////////////////////////////////////////////////
+int main() 
+{
+    char arr[20];
+
+    printf("Enter string: ");
+    scanf("%[^\n]s", arr);
+
+     StrLwrx(arr); 
+     printf("Modified string is%s",arr);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////
+//  
+//  Testcases Succesfully handled by Application
+//    
+//  Input1 : "MARVELLOUS "       Output : marvellous
+//   
+//
+///////////////////////////////////////////////////////////////////
+
+
+
+
+ 
+ 
