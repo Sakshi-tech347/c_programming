@@ -17,6 +17,10 @@ void DisplayASCII()
 }
 int main()
 {   
+    printf("ASCII Table (0 to 127)\n");
+    printf("----------------------\n");
+    printf("Dec\tHex\tOct\tChar\n");
+    printf("----------------------\n");
     DisplayASCII();
     return 0;
 }
