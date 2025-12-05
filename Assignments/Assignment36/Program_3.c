@@ -1,0 +1,68 @@
+///////////////////////////////////////////////////////////////////
+//    
+//    Required header file
+//
+///////////////////////////////////////////////////////////////////
+
+#include <stdio.h>       
+#include <stdbool.h>     
+
+///////////////////////////////////////////////////////////////////
+//
+//    Function Name : strtogglex
+//    Desciption :    It use  for convert string
+//    Input :         string
+//    Output :        string
+//    Auther :        Sakshi  Laxman Kachate
+//    Date :          05/12/2025
+//
+/////////////////////////////////////////////////////////////////////
+void strtogglex(char str[]) 
+{
+      while(*str != 0)
+      {
+        if(*str >= 'a' && *str <='z')
+        {
+            *str = *str - 32;
+        }
+        else  if(*str >= 'A' && *str <='Z')
+        {
+            *str = *str + 32;
+        }
+        str++;
+      } 
+}
+
+
+///////////////////////////////////////////////////////////////////
+//    
+//    Entry point Function for the application 
+//
+///////////////////////////////////////////////////////////////////
+int main() 
+{
+    char arr[20];
+
+    printf("Enter string: ");
+    scanf("%[^\n]s", arr);
+
+     strtogglex(arr); 
+     printf("Modified string is  %s",arr);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////
+//  
+//  Testcases Succesfully handled by Application
+//    
+//  Input1 :  hElLo      Output : modified string is HeLlO
+//   
+//
+///////////////////////////////////////////////////////////////////
+
+
+
+
+ 
+ 
