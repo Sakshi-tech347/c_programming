@@ -1,0 +1,61 @@
+///////////////////////////////////////////////////////////////////
+//    
+//    Required header file
+//
+///////////////////////////////////////////////////////////////////
+
+#include <stdio.h>       
+ 
+///////////////////////////////////////////////////////////////////
+//
+//    Function Name : Display recurrsion
+//    Desciption :    It use to dispay factorial of given number
+//    Input :         int
+//    Output :        int
+//    Auther :        Sakshi  Laxman Kachate
+//    Date :          14/12/2025
+//
+/////////////////////////////////////////////////////////////////////
+ 
+
+
+
+int factorial(int n)
+{
+    if (n == 0 || n == 1)   // base condition
+        return 1;
+
+    return n * factorial(n - 1);  // recursive call
+}
+  
+
+///////////////////////////////////////////////////////////////////
+//    
+//    Entry point Function for the application 
+//
+///////////////////////////////////////////////////////////////////
+ 
+int main()
+{
+    int num =0 , iRet =0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    iRet =factorial(num);
+    printf("Factorial = %d", iRet);
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////
+//  
+//  Testcases Succesfully handled by Application
+//    
+//  Input1 : 5   Output :   factorial : 120
+//   
+//
+///////////////////////////////////////////////////////////////////
+
+
+
+
