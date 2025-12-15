@@ -1,0 +1,69 @@
+///////////////////////////////////////////////////////////////////
+//    
+//    Required header file
+//
+///////////////////////////////////////////////////////////////////
+
+#include <stdio.h>       
+ 
+///////////////////////////////////////////////////////////////////
+//
+//    Function Name : Display recurrsion
+//    Desciption :    It use to dispay factoria; of given number
+//    Input :         in
+//    Output :        int
+//    Auther :        Sakshi  Laxman Kachate
+//    Date :          14/12/2025
+//
+/////////////////////////////////////////////////////////////////////
+ 
+
+
+
+int Mult(int n)
+ 
+{
+    if (n == 0)           
+        return 1;
+
+    return (n % 10) * Mult(n / 10);  // recursive call
+}
+  
+
+///////////////////////////////////////////////////////////////////
+//    
+//    Entry point Function for the application 
+//
+///////////////////////////////////////////////////////////////////
+ 
+int main()
+{
+    int num =0 , iRet =0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    iRet =Mult(num);
+    
+
+       if (num == 0)
+        printf("multiply of digits = 0");
+    else
+        printf("multiply of digit = %d",iRet);
+
+    return 0;
+    
+}
+
+///////////////////////////////////////////////////////////////////
+//  
+//  Testcases Succesfully handled by Application
+//    
+//  Input1 : 523   Output :   factorial : 30
+//   
+//
+///////////////////////////////////////////////////////////////////
+
+
+
+
